@@ -1,0 +1,50 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    gap: 4rem;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.inputContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.inputContainer input {
+    border: 2px solid black;
+    font-size: 28px;
+    width: 40px;  
+    text-align: center;
+}
+
+.inputContainer input::-webkit-outer-spin-button,
+.inputContainer input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.inputContainer button {
+    font-size: 18px;
+    border: 2px solid black;
+    cursor: pointer;
+} 
+
+#sortButton ,
+#clearButton{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sortedArrayContainer,
+.arrayContainer {
+    height: 30px;
+    display: flex;
+}
