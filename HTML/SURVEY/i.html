@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survery_form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Customer Survey Form</h1>
+        <div class="form-container">
+            <form id="form">
+                <div class="top-container">
+                    <div class="left input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="right input">
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" required>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <p>Is this first time you are using our products & Services?</p>
+                    <div class="checkbox-container">
+                        <div class="yes">
+                            <input type="radio" name="question1" id="yes1" value="Yes" checked> 
+                            <label for="yes1">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="radio" name="question1" id="no1" value="No">
+                            <label for="no1">No</label>
+                        </div>  
+                    </div>
+                </div>
+                <div class="input-container">
+                    <p>Would you suggest to your friends and colleagues?</p>
+                    <div class="checkbox-container">
+                        <div class="checkbox">
+                            <input type="radio" name="question2" id="yes2"  value="Yes" checked>
+                            <label for="yes2">Yes</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" name="question2" id="no2" value="No">
+                            <label for="no2">No</label>
+                        </div>  
+                    </div>
+                </div>
+                <div class="input-container">
+                    <p>How satisfied are you with our company overall?</p>
+                    <div class="checkbox-container">
+                        <div class="checkbox">
+                            <input type="radio" name="satisfaction" id="satisfied" value="Satisfied" checked>
+                            <label for="satisfied">Satisfied</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" name="satisfaction" value="Undecided" id="undecided">
+                            <label for="undecided">Undecided</label>
+                        </div>  
+                        <div class="checkbox">
+                            <input type="radio" name="satisfaction" value="Unsatisfied" id="unsatisfied">
+                            <label for="unsatisfied">Unsatisfied</label>
+                        </div> 
+                    </div>
+                    <div class="input-container">
+                        <p>Do you have suggestion to improve our service?</p>
+                        <textarea name="suggestion" id="suggestion" cols="40" rows="10" required></textarea>
+                    </div>
+                    <div class="button-container">
+                        <button id="submit">submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="final-display">
+            <div id="name-op">Name : </div>
+            <div id="mail-op">Email : </div>
+            <div id="qn1-op">First time? : </div>
+            <div id="qn2-op">Suggest to friends? : </div>
+            <div id="qn3-op">Satisfaction : </div>
+            <div id="suggest-op">Suggestions : </div>
+           
+            <button id="ok">OK</button>
+        </div>
+        <p>2023 Customer survey Form | All rights reserved | Designed by Shiyas</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
